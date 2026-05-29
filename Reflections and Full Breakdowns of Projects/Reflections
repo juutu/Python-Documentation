@@ -1,0 +1,80 @@
+My Dev Journal: Project Reflections & Breakthroughs
+
+This is where I document the actual reality of building these projects. Looking back, the basics came together pretty smoothly—variables, simple calculations, and core syntax just made sense early on without much friction.
+
+The real shift happened when I hit the intermediate topics. That's where the code started getting a lot more abstract. I found myself slowing down to map out how data was moving, fighting with variable scopes, and spending a lot of time debugging to get my automated tests to pass. But, as I practiced more through more intermidiate python practice, and lately, core projects, and soon advanced applications, i would gradually adapt to it, and it would become less common.
+
+🔍 IB Omniscience Portal
+🔹 IB Formula Vault & Search Engine (formula_bank.py)
+Why I Built It: A digital database to store and look up academic formulas sorted by topic. It functions as a lightweight database engine that automatically formats user text to block duplicate entries, catches empty inputs before they cause crashes, saves updates to the hard drive in real time, and runs a case-insensitive search that instantly pulls formulas out of layered dictionary structures.
+The Experience: This project represented the peak of my procedural programming journey, and it was a massive mental workout. I initially got stuck trying to use a brute-force for loop to scan for duplicate formulas, which accidentally broke the whole function. I had to learn that dictionaries have an internal map, meaning I could completely ditch the slow loop and check for duplicates instantly using a direct in lookup. I also ran into a variable naming collision in my search menu loops that caused a runtime crash, forcing me to learn how to keep my loop variable names perfectly isolated.
+What I Actually Learned: This lab taught me how to handle nested dictionaries smoothly (like vault[topic][formula_name] = equation). It also taught me how to use isinstance() to check data types in real time so the interface knows whether to print a simple error string or unpack a full dictionary of results. Most importantly, I learned how to use AI effectively—not to write the code for me, but to act as a peer programmer to help me decode generic error messages and spot hidden syntax traps.
+
+🔹 IB Diploma Grade Tracker & Core Matrix Simulator (ib_grade_tracker.py)
+Why I Built It: Tracks a student's full IB academic profile by turning raw assignment scores into weighted class averages and final 1–7 scale grades. It simultaneously checks Extended Essay (EE) and Theory of Knowledge (TOK) marks against a point matrix to calculate bonus points, automatically verifying real-time graduation conditions.
+The Experience: This was my first time handling highly complex, real-world rule sheets in code. Building the grade boundaries and the TOK/EE matrix required heavy conditional logic. The tough part wasn't just doing the basic math, but keeping the code organized so that data from one subject didn't accidentally overwrite or corrupt data in another.
+What I Actually Learned: I mastered the "separation of concerns" design principle by keeping my file storage, core grade rules, and console menu completely independent of each other. I also learned how to use file streams to read and write permanent JSON data safely without accidentally wiping out the student's existing profile history.
+
+🔹 Assignment Planner (assignment_planner.py)
+Why I Built It: A practical tool to manage school assignments and tests by letting me create, delete, view, and modify tasks in a clean list on my screen.
+The Experience: This was a fun project because it was something I could actually use in my daily school life. It took the abstract concepts I practiced in earlier labs and turned them into a functional application.
+What I Actually Learned: This was my very first introduction to data persistence. I learned how to use Python's json library to save data directly to a physical file on my computer, meaning my assignments stayed saved even after closing the terminal.
+
+🔍 Intermediate Python Practice
+
+
+🔍 Basic Python Practice
+🔹 Bill Splitter (bill_splitter.py)
+Why I Built It: A straightforward calculator utility to figure out exactly what everyone owes at dinner, including tax and tips.
+The Experience: The logic was entirely intuitive. I built this out quickly and added simple conditions to prevent errors, like a crash if someone accidentally typed "0" people.
+What I Actually Learned: Handled basic user inputs, data type casting (like converting string inputs into floats), and using f-strings to keep outputs clean.
+
+🔹 Movie Ticket Booking Simulator (movie_ticket_booking.py)
+Why I Built It: A script that handles seat assignments and ticket prices based on customer age, timing, and available slots.
+The Experience: Setting up the conditional logic rules came together smoothly. I mapped out age thresholds and timing slots easily without getting twisted up in the code branches.
+What I Actually Learned: Used logical operators (and, or, not) to combine checks cleanly, keeping the execution flow streamlined and easy to follow.
+
+🔹 Caesar Cypher Encoder/Decoder (caesar_cypher.py)
+Why I Built It: A text manipulation game that encrypts or decrypts messages by shifting characters along the alphabet.
+The Experience: Converting the puzzle rules into actual code was a straightforward process. The main trick was handling the alphabet boundary so characters wrapped from 'Z' back to 'A', which I solved with basic arithmetic.
+What I Actually Learned: Got a solid look at character-to-integer conversions using ord() and chr(), along with using the modulo operator (%) to handle looping boundaries.
+
+🔹 Bounty Hunter Mechanics Simulator (bounty_hunter.py)
+Why I Built It: A text-based logic loop designed to track player states, inventories, and mission targets.
+The Experience: I handled the game state flags and conditional updates without any real issues. The logic flow for updating player inventory maps felt natural to implement.
+What I Actually Learned: Worked with flag-based logic systems, tracking variable updates over time, and changing game states based on consecutive user choices.
+
+🔹 Employee Profile Generator (employee_profile_generator.py)
+Why I Built It: An automation tool that takes loose, raw employee details and formats them into standardized company profiles.
+The Experience: Straightforward string manipulation. Putting variables inside formatting blocks allowed me to standardize input data cleanly without getting stuck on the syntax.
+What I Actually Learned: Used core string methods like .strip(), .title(), and .upper() to clean up raw inputs properly.
+
+🔹 Report Card Printer (report_card_printer.py)
+Why I Built It: A tool that gathers multiple student grades, calculates the average performance, and prints a formatted card to the terminal.
+The Experience: A great exercise in visual layout formatting. The concepts made sense right away, and I used padding parameters to align strings cleanly so the terminal output looks like a structured spreadsheet.
+What I Actually Learned: Learned how to use f-string padding tricks (like {:.<20}) to force the console to print perfectly aligned rows and columns every single time.
+
+🔹 User Configuration Manager (user_configuration_manager.py)
+Why I Built It: A script that manages application settings securely, making sure preferences are cleaned up and formatted properly while catching runtime errors before they cause a crash.
+The Experience: This was my introduction to the CRUD (Create, Read, Update, Delete) model. It reinforced concepts like string formatting and collection management, and I was happy to find that I managed the overall data flow quite smoothly.
+What I Actually Learned: I mastered the basic pillars of CRUD, which is a core requirement for real-world software. I also noticed that writing code without getting tripped up by basic syntax errors has become much more natural.
+
+🔹 Medical Data Validator (medical_data_validator.py)
+Why I Built It: A strict gatekeeper for a dataset of medical records, checking each entry to ensure no data is corrupted, missing, or improperly formatted.
+The Real Challenge: This is where the intermediate difficulty spike really hit me. I struggled with a hidden variable scope issue that took over 40 minutes to track down. I created a constraints dictionary inside the validation function, but accidentally tried to pull keys from it in a completely separate function. The code just kept crashing. I had to slow down, map out where my variables lived and died, and explicitly rebuild the target key set locally where the validation loop runs.
+What I Actually Learned: This project forced me to understand variable scope (how variables exist only inside specific functions). It also gave me hands-on practice with more advanced tools like dictionary unpacking (kwargs) and regular expressions (re.fullmatch) to enforce strict text patterns.
+
+🔹 Automated Delivery Drone (automated_delivery_drone.py)
+Why I Built It: A simulation tool designed to track a delivery drone's real-time flight coordinates and payload states.
+The Real Challenge: Moving past simple variables and understanding data integrity—making sure that critical details like flight coordinates couldn't be accidentally changed mid-flight by other parts of the script.
+What I Actually Learned: I finally understood the practical difference between lists and tuples. By locking coordinates into immutable (unchangeable) tuples, I learned how to protect critical data from accidental bugs.
+
+🔹 PIN Extractor (pin_extractor.py)
+Why I Built It: A utility designed to dig through messy, unformatted text strings, isolate specific numeric PIN sequences, and verify them.
+The Real Challenge: Handling unpredictable user strings. If a user inputs something unexpected, standard string slicing can easily trigger an "out-of-bounds" error and crash the whole program.
+What I Actually Learned: I learned how to write robust text-parsing logic and design clean function return structures so the code handles bad data gracefully instead of breaking.
+
+🔹 Number Pattern Generator (num_pattern.py)
+Why I Built It: An algorithmic exercise focused on printing specific numeric grids using mathematical logic.
+The Real Challenge: Managing nested loops. One minor indentation mistake or counting error can easily create an infinite runaway loop or completely scramble the text alignment in the terminal.
+What I Actually Learned: I developed a much stronger mental model of loop execution flow, learning how to step through nested iterations sequentially and control spacing precisely.
