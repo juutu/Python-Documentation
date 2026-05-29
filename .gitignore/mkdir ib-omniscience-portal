@@ -1,0 +1,70 @@
+# ====================================================================
+# PRODUCTION INTEGRITY FILTER MATRIX FOR PYTHON / OS / EDITORS
+# ====================================================================
+
+# 1. Python Runtime Environments, Packages & Compilation Artifacts
+venv/
+__pycache__/
+*.pyc
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# 2. Exclude Dynamic Local JSON Databases to Prevent Overwrites
+assignments.json
+ib_data.json
+formula_vault.json
+flashcards.json
+spanish_vocab.json
+lab_database.json
+
+# 3. Exclude Dynamic Image Assets and Graphic Vector Outputs
+*_plot.png
+*_ia_plot.png
+
+# 4. Protect Environment Secret Configurations, Variables & Logs
+.env
+.env.local
+.env.*.local
+*.log
+pip-log.txt
+cherrypy.log
+
+# 5. Local Code Editor / IDE Configuration Locks
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# 6. Operating System Level Cache Remnants
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.Spotlight-V100
+.Trashes
+
+# 7. Type Checking and Testing Caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.coverage
+htmlcov/
