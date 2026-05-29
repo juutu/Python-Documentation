@@ -1,0 +1,46 @@
+# ====================================================================
+# ENVIRONMENT & DEPENDENCY EXCLUSIONS
+# ====================================================================
+# Ignore the Python virtual environment (contains machine-specific binaries)
+venv/
+ENV/
+env/
+
+# ====================================================================
+# PYTHON RUNTIME CACHES
+# ====================================================================
+# Ignore compiled bytecode folders and optimizing caches
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# ====================================================================
+# PERSONAL DATABASE & DATA PRIVACY SECRETS
+# ====================================================================
+# Prevent local data state storage matrices from leaking to GitHub
+flashcards.json
+spanish_vocab.json
+assignments.json
+*.db
+*.sqlite3
+
+# ====================================================================
+# LOCAL EXPORT CHANNELS & MEDIA
+# ====================================================================
+# Exclude generated visual assessment plots or test captures
+*_ia_plot.png
+*.pdf
+*.csv
+
+# ====================================================================
+# MACOS SYSTEM CONFIGURATIONS
+# ====================================================================
+# Ignore desktop services storage layout keys and localized hidden tokens
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
