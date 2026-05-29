@@ -28,6 +28,8 @@ This is where I nailed down the fundamentals like basic math calculations, varia
 
 This is where the training wheels came off. The concepts get more abstract here, and I use these scripts to practice "defensive programming"—writing smart code that validates data and stops errors before they cause a crash.
 
+Note: In Progress
+
 * **Featured Scripts:**
 * `budget_app.py` (Constructing class ledgers, cross-category transfer logs, and visual vertical category spending bar charts)
 * `game_character_stats_tracker.py` (Implementing secure object-oriented state tracking through properties, forcing attribute variables to stay inside strict thresholds, and overriding string representation formatting)
@@ -41,7 +43,9 @@ This is where the training wheels came off. The concepts get more abstract here,
 
 ### 🚀 [Ib Omniscience Portal]
 
-This directory is reserved for my fully realized, end-to-end terminal applications. These milestones demonstrate distinct layered architectures, local JSON state synchronization, and strict execution workflows.
+This directory is reserved for my files leading up to my project, an automated IB Omniscience Portal. This would reduce the amount of times I would have to switch tabs, especially needed to save time during my IB DP Years.
+
+Note: In Progress 
 
 * **Featured Projects:**
 * `assignment_planner.py` (A layered task suite that normalizes input strings to lowercase, blocks duplicate trackers, and runs safe dictionary fallback values while updating records locally)
