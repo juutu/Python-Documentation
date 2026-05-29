@@ -74,18 +74,6 @@ A fast indexing library with automated database seeding. It allows keyword extra
 
 ---
 
-## 🧪 Ongoing Programming Practice & Sandboxes
-
-Beyond the main core engine, this workspace contains isolated labs focused on intermediate software development patterns, data constraints, and object-oriented paradigms:
-
-* **Data Encapsulation & Bound Verification (`game_character_stats_tracker.py`):** Implementing safe, read-only property interfaces alongside strict boundary-clamping setters to prevent out-of-bounds metric states and recursion deadlocks.
-* **Defensive Type & Value Verification (`planet_class.py`, `bounty_hunter.py`, `medical.py`):** Practicing type validation patterns, error trapping, string formatting techniques, and regex validation schemas for raw data structures.
-* **Algorithmic String Manipulation (`caesarcypher.py`, `pinextractor.py`):** Implementing encryption translation matrices and nested loop processors for dynamic text parsing.
-
----
-
-## 🛠️ Local Environment Configuration
-
 ### Dependencies
 
 The workspace utilizes a mix of the Python standard library and third-party dependencies:
