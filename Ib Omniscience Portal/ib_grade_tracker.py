@@ -2,7 +2,8 @@ import json
 import os
 
 # GLOBAL CONFIGURATION
-IB_DATA_FILE = 'ib_data.json'
+script_dir = os.path.dirname(os.path.abspath(__file__))
+IB_DATA_FILE = os.path.join(script_dir, 'ib_data.json')
 
 # LAYER 1: DATA PERSISTENCE (JSON File Storage)
 # =====================================================================
