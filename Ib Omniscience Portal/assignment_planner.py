@@ -2,7 +2,9 @@ import json
 import os
 # LAYER 1: DATA PERSISTENCE (JSON File Storage)
 # =====================================================================
-DB_FILE_1 = 'assignments.json'
+script_dir = os.path.dirname(os.path.abspath(__file__))
+DB_FILE_1 = os.path.join(script_dir, 'assignments.json')
+
 def load_assignments_from_file():
     if not os.path.exists(DB_FILE_1): 
         return {}
